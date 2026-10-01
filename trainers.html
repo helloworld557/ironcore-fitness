@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trainers | Ironcore Fitness</title>
+    <meta
+      name="description"
+      content="Meet the certified coaches at Ironcore Fitness."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top ic-nav show-bg"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">IRON<span>CORE</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trainers.html">Trainers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="membership.html" class="btn btn-ic">JOIN NOW</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <h1>Trainers.</h1>
+          <p class="lead col-lg-6">
+            Certified coaches with real experience. Find the specialist who fits
+            your goal.
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+          <div
+            class="filter-bar mb-4"
+            role="group"
+            aria-label="Filter trainers by specialty"
+            data-target=".trainer-item"
+          >
+            <button
+              class="btn btn-ic-outline active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              class="btn btn-ic-outline"
+              data-filter="strength"
+              aria-pressed="false"
+            >
+              Strength
+            </button>
+            <button
+              class="btn btn-ic-outline"
+              data-filter="hiit"
+              aria-pressed="false"
+            >
+              HIIT
+            </button>
+            <button
+              class="btn btn-ic-outline"
+              data-filter="personal"
+              aria-pressed="false"
+            >
+              Personal Training
+            </button>
+            <button
+              class="btn btn-ic-outline"
+              data-filter="mobility"
+              aria-pressed="false"
+            >
+              Mobility
+            </button>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-md-6 col-lg-4 filter-item trainer-item"
+              data-category="strength"
+            >
+              <article class="trainer">
+                <div class="img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=70"
+                    alt="Trainer Alex Carter"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="h4">Alex Carter</h2>
+                <p class="mb-1" style="color: var(--ic-accent)">
+                  Strength &amp; Conditioning
+                </p>
+                <p class="mb-2"><small>12 years experience</small></p>
+                <p>
+                  Former competitive powerlifter who coaches safe, progressive
+                  strength for every level.
+                </p>
+                <div class="social">
+                  <a href="#" aria-label="Alex Carter on Instagram"
+                    ><i class="bi bi-instagram"></i></a
+                  ><a href="#" aria-label="Alex Carter on LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 filter-item trainer-item"
+              data-category="hiit"
+            >
+              <article class="trainer">
+                <div class="img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=70"
+                    alt="Trainer Sarah Mitchell"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="h4">Sarah Mitchell</h2>
+                <p class="mb-1" style="color: var(--ic-accent)">
+                  HIIT &amp; Functional Training
+                </p>
+                <p class="mb-2"><small>9 years experience</small></p>
+                <p>
+                  Builds fast, fun conditioning classes that leave members
+                  energized, not wrecked.
+                </p>
+                <div class="social">
+                  <a href="#" aria-label="Sarah Mitchell on Instagram"
+                    ><i class="bi bi-instagram"></i></a
+                  ><a href="#" aria-label="Sarah Mitchell on LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 filter-item trainer-item"
+              data-category="personal"
+            >
+              <article class="trainer">
+                <div class="img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=70"
+                    alt="Trainer Daniel Brooks"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="h4">Daniel Brooks</h2>
+                <p class="mb-1" style="color: var(--ic-accent)">
+                  Personal Training
+                </p>
+                <p class="mb-2"><small>10 years experience</small></p>
+                <p>
+                  Works one-on-one with members on fat loss, muscle gain and
+                  building lasting habits.
+                </p>
+                <div class="social">
+                  <a href="#" aria-label="Daniel Brooks on Instagram"
+                    ><i class="bi bi-instagram"></i></a
+                  ><a href="#" aria-label="Daniel Brooks on LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 filter-item trainer-item"
+              data-category="mobility"
+            >
+              <article class="trainer">
+                <div class="img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=70"
+                    alt="Trainer Maria Lopez"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="h4">Maria Lopez</h2>
+                <p class="mb-1" style="color: var(--ic-accent)">
+                  Mobility &amp; Recovery
+                </p>
+                <p class="mb-2"><small>8 years experience</small></p>
+                <p>
+                  Physiotherapy-trained coach focused on flexibility, injury
+                  prevention and recovery.
+                </p>
+                <div class="social">
+                  <a href="#" aria-label="Maria Lopez on Instagram"
+                    ><i class="bi bi-instagram"></i></a
+                  ><a href="#" aria-label="Maria Lopez on LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 filter-item trainer-item"
+              data-category="strength"
+            >
+              <article class="trainer">
+                <div class="img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=70"
+                    alt="Trainer Marcus Reed"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="h4">Marcus Reed</h2>
+                <p class="mb-1" style="color: var(--ic-accent)">
+                  Strength &amp; Conditioning
+                </p>
+                <p class="mb-2"><small>7 years experience</small></p>
+                <p>
+                  Specializes in barbell technique and helping newer lifters
+                  move with confidence.
+                </p>
+                <div class="social">
+                  <a href="#" aria-label="Marcus Reed on Instagram"
+                    ><i class="bi bi-instagram"></i></a
+                  ><a href="#" aria-label="Marcus Reed on LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 filter-item trainer-item"
+              data-category="hiit"
+            >
+              <article class="trainer">
+                <div class="img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=700&q=70"
+                    alt="Trainer Chloe Bennett"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="h4">Chloe Bennett</h2>
+                <p class="mb-1" style="color: var(--ic-accent)">
+                  HIIT &amp; Boxing Fitness
+                </p>
+                <p class="mb-2"><small>6 years experience</small></p>
+                <p>
+                  Ex-amateur boxer running high-energy bag work and conditioning
+                  sessions.
+                </p>
+                <div class="social">
+                  <a href="#" aria-label="Chloe Bennett on Instagram"
+                    ><i class="bi bi-instagram"></i></a
+                  ><a href="#" aria-label="Chloe Bennett on LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band dark">
+        <div class="container">
+          <h2 class="section-title">Train with a coach.</h2>
+          <p>Book a free consultation and meet the right trainer for you.</p>
+          <a href="contact.html" class="btn btn-ic">BOOK A CONSULTATION</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ic-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a
+              class="navbar-brand text-decoration-none"
+              href="index.html"
+              style="font-size: 1.4rem; color: #fff"
+              >IRON<span style="color: var(--ic-accent)">CORE</span> FITNESS</a
+            >
+            <p class="mt-3">Build your stronger self.</p>
+            <a href="#" class="me-3" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i></a
+            ><a href="#" class="me-3" aria-label="Facebook"
+              ><i class="bi bi-facebook"></i></a
+            ><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="trainers.html">Trainers</a></li>
+              <li><a href="membership.html">Membership</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="programs.html">Strength</a></li>
+              <li><a href="programs.html">HIIT</a></li>
+              <li><a href="programs.html">Mobility</a></li>
+              <li><a href="programs.html">Personal training</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <h4>Contact</h4>
+            <ul>
+              <li>12 Foundry Street</li>
+              <li><a href="tel:+15550142020">(555) 014-2020</a></li>
+              <li>
+                <a href="mailto:hello@ironcorefitness.example"
+                  >hello@ironcorefitness.example</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <h4>Opening hours</h4>
+            <ul>
+              <li>Mon–Fri: 5:00 AM – 11:00 PM</li>
+              <li>Sat–Sun: 7:00 AM – 9:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Ironcore Fitness.</div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

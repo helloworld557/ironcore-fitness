@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Membership | Ironcore Fitness</title>
+  <meta name="description" content="Choose a Basic, Pro or Elite membership at Ironcore Fitness. Save with yearly billing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top ic-nav show-bg" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">IRON<span>CORE</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn btn-ic" data-bs-toggle="modal" data-bs-target="#joinModal" data-plan="Pro">JOIN NOW</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="page-hero">
+    <div class="container">
+      <h1>Membership.</h1>
+      <p class="lead col-lg-6">Simple plans, no joining fee. Switch to yearly billing and save 20%.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button class="active" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button data-billing="yearly" aria-pressed="false">Yearly</button>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 col-lg-4">
+          <article class="ic-card price-card" data-monthly="29" data-yearly="23" data-total="278" data-save="70">
+            <h2 class="h4">BASIC</h2>
+            <div class="price">$<span class="amount">29</span><small>/month</small></div>
+            <p class="billing-note mb-0">Billed monthly. Cancel anytime.</p>
+            <ul class="check-list"><li>Gym access</li><li>Locker access</li><li>Basic equipment</li><li>Mobile app</li></ul>
+            <button class="btn btn-ic-outline" data-bs-toggle="modal" data-bs-target="#joinModal" data-plan="Basic">JOIN NOW</button>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="ic-card price-card featured" data-monthly="59" data-yearly="47" data-total="566" data-save="142">
+            <span class="flag">MOST POPULAR</span>
+            <h2 class="h4">PRO</h2>
+            <div class="price">$<span class="amount">59</span><small>/month</small></div>
+            <p class="billing-note mb-0">Billed monthly. Cancel anytime.</p>
+            <ul class="check-list"><li>Everything in Basic</li><li>Group classes</li><li>Fitness assessment</li><li>Personal training consultation</li></ul>
+            <button class="btn btn-ic" data-bs-toggle="modal" data-bs-target="#joinModal" data-plan="Pro">JOIN NOW</button>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+          <article class="ic-card price-card" data-monthly="99" data-yearly="79" data-total="950" data-save="238">
+            <h2 class="h4">ELITE</h2>
+            <div class="price">$<span class="amount">99</span><small>/month</small></div>
+            <p class="billing-note mb-0">Billed monthly. Cancel anytime.</p>
+            <ul class="check-list"><li>Everything in Pro</li><li>4 personal training sessions</li><li>Nutrition guidance</li><li>Priority support</li></ul>
+            <button class="btn btn-ic-outline" data-bs-toggle="modal" data-bs-target="#joinModal" data-plan="Elite">JOIN NOW</button>
+          </article>
+        </div>
+      </div>
+      <p class="text-center mt-4 mb-0"><small>Demo site: no payments are processed.</small></p>
+    </div>
+  </section>
+
+  <section style="background:var(--ic-surface)">
+    <div class="container"><div class="row g-5">
+      <div class="col-lg-4"><h2 class="section-title">Questions?</h2><p>Quick answers before you join.</p></div>
+      <div class="col-lg-8">
+        <div class="accordion" id="faq">
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="true" aria-controls="f1">How much does membership cost?</button></h3><div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">Plans start at $29 per month. Yearly billing takes 20% off every plan.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2" aria-expanded="false" aria-controls="f2">Do you offer personal training?</button></h3><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes. Elite includes four sessions a month, and any member can book sessions separately.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3" aria-expanded="false" aria-controls="f3">Can beginners join?</button></h3><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Absolutely. Pro and Elite start with a fitness assessment, and our coaches will show you around.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4" aria-expanded="false" aria-controls="f4">What are your opening hours?</button></h3><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Monday to Friday 5:00 AM – 11:00 PM, Saturday and Sunday 7:00 AM – 9:00 PM.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5" aria-expanded="false" aria-controls="f5">Do you offer group classes?</button></h3><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">More than 50 a week, from HIIT and boxing to mobility. Classes are included with Pro and Elite.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f6" aria-expanded="false" aria-controls="f6">Can I cancel my membership?</button></h3><div id="f6" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Monthly members can cancel anytime with 30 days' notice. Yearly plans are paid upfront.</div></div></div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+</main>
+
+<!-- Join modal (frontend only) -->
+<div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title h4" id="joinTitle">Join Ironcore</h2><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <form novalidate>
+        <div class="modal-body">
+          <div class="mb-3"><label for="jmName" class="form-label">Full name</label><input id="jmName" name="fullName" type="text" class="form-control" autocomplete="name"><div class="invalid-feedback">Enter your full name.</div></div>
+          <div class="mb-3"><label for="jmEmail" class="form-label">Email</label><input id="jmEmail" name="email" type="email" class="form-control" autocomplete="email"><div class="invalid-feedback">Enter a valid email address.</div></div>
+          <div class="mb-3"><label for="jmPhone" class="form-label">Phone</label><input id="jmPhone" name="phone" type="tel" class="form-control" autocomplete="tel"><div class="invalid-feedback">Enter a valid phone number.</div></div>
+          <div><label for="jmPlan" class="form-label">Plan</label><select id="jmPlan" name="plan" class="form-select"><option>Basic</option><option selected>Pro</option><option>Elite</option></select></div>
+        </div>
+        <div class="modal-footer"><button type="submit" class="btn btn-ic">SEND MY INTEREST</button></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 start-0 p-3">
+  <div id="successToast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="toast-body"><i class="bi bi-check-circle-fill" style="color:var(--ic-accent)"></i> Thanks! A coach will contact you within one business day.</div>
+  </div>
+</div>
+
+<footer class="ic-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><a class="navbar-brand text-decoration-none" href="index.html" style="font-size:1.4rem;color:#fff">IRON<span style="color:var(--ic-accent)">CORE</span> FITNESS</a><p class="mt-3">Build your stronger self.</p>
+        <a href="#" class="me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="me-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
+      <div class="col-6 col-lg-2"><h4>Quick links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="membership.html">Membership</a></li></ul></div>
+      <div class="col-6 col-lg-2"><h4>Programs</h4><ul><li><a href="programs.html">Strength</a></li><li><a href="programs.html">HIIT</a></li><li><a href="programs.html">Mobility</a></li><li><a href="programs.html">Personal training</a></li></ul></div>
+      <div class="col-md-6 col-lg-2"><h4>Contact</h4><ul><li>12 Foundry Street</li><li><a href="tel:+15550142020">(555) 014-2020</a></li><li><a href="mailto:hello@ironcorefitness.example">hello@ironcorefitness.example</a></li></ul></div>
+      <div class="col-md-6 col-lg-2"><h4>Opening hours</h4><ul><li>Mon–Fri: 5:00 AM – 11:00 PM</li><li>Sat–Sun: 7:00 AM – 9:00 PM</li></ul></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Ironcore Fitness.</div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
